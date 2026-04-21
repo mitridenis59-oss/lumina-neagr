@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import cigar from "@/assets/product-cigar.jpg";
-import tobacco from "@/assets/product-tobacco.jpg";
-import accessories from "@/assets/product-accessories.jpg";
+import cigar from "@/assets/p-cohiba.jpg";
+import tobacco from "@/assets/p-virginia.jpg";
+import accessories from "@/assets/p-humidor.jpg";
 
 const posts = [
   { title: "Anatomia unui trabuc cubanez", excerpt: "De la frunza Volado la Ligero — cum se construiește un Habano clasic și de ce contează proporțiile.", date: "12 Apr 2026", img: cigar },
