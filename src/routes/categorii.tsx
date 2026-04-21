@@ -40,9 +40,9 @@ function AllProducts() {
           <Input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Caută produs..." className="pl-10 bg-secondary/50 border-border h-11" />
         </div>
         <div className="flex gap-2 overflow-x-auto">
-          <button onClick={() => setFilter("all")} className={`px-4 py-2 rounded-full text-sm whitespace-nowrap transition-all ${filter === "all" ? "bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold" : "glass hover:border-primary/40"}`}>Toate</button>
+          <button onClick={() => setFilter("all")} className={`px-4 py-2 rounded-full text-sm whitespace-nowrap transition-all ${filter === "all" ? "bg-primary text-primary-foreground font-semibold" : "glass hover:border-primary/40"}`}>Toate</button>
           {categories.map((c) => (
-            <button key={c.id} onClick={() => setFilter(c.id)} className={`px-4 py-2 rounded-full text-sm whitespace-nowrap transition-all ${filter === c.id ? "bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold" : "glass hover:border-primary/40"}`}>
+            <button key={c.id} onClick={() => setFilter(c.id)} className={`px-4 py-2 rounded-full text-sm whitespace-nowrap transition-all ${filter === c.id ? "bg-primary text-primary-foreground font-semibold" : "glass hover:border-primary/40"}`}>
               {c.name}
             </button>
           ))}

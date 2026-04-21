@@ -58,7 +58,7 @@ function ProductPage() {
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">{product.origin}</p>
           <h1 className="font-display text-4xl md:text-5xl font-bold mb-4">{product.name}</h1>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">{product.description}</p>
-          <div className="text-4xl font-bold text-gradient mb-8">{product.price} RON</div>
+          <div className="text-4xl font-bold text-shimmer mb-8">{product.price} RON</div>
 
           <div className="flex items-center gap-4 mb-6">
             <div className="flex items-center glass rounded-xl">
@@ -66,7 +66,7 @@ function ProductPage() {
               <span className="w-10 text-center font-semibold">{qty}</span>
               <button onClick={() => setQty(qty + 1)} className="w-11 h-11 flex items-center justify-center hover:bg-secondary/50"><Plus className="w-4 h-4" /></button>
             </div>
-            <Button onClick={handleAdd} size="lg" className="flex-1 bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 font-semibold glow-violet">
+            <Button onClick={handleAdd} size="lg" className="flex-1 bg-primary text-primary-foreground hover:opacity-90 font-semibold glow-gold">
               {added ? <><Check className="w-4 h-4 mr-2" /> Adăugat</> : "Adaugă în coș"}
             </Button>
           </div>

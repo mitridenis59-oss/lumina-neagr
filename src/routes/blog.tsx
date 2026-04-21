@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import cigar from "@/assets/product-cigar.jpg";
-import tobacco from "@/assets/product-tobacco.jpg";
-import accessories from "@/assets/product-accessories.jpg";
+import cigar from "@/assets/p-cohiba.jpg";
+import tobacco from "@/assets/p-virginia.jpg";
+import accessories from "@/assets/p-humidor.jpg";
 
 const posts = [
   { title: "Anatomia unui trabuc cubanez", excerpt: "De la frunza Volado la Ligero — cum se construiește un Habano clasic și de ce contează proporțiile.", date: "12 Apr 2026", img: cigar },
@@ -36,7 +36,7 @@ function Blog() {
             </div>
             <div className="p-6">
               <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">{p.date}</p>
-              <h2 className="font-display text-xl font-bold mb-3 group-hover:text-gradient transition-all">{p.title}</h2>
+              <h2 className="font-display text-xl font-bold mb-3 group-hover:text-shimmer transition-all">{p.title}</h2>
               <p className="text-sm text-muted-foreground leading-relaxed">{p.excerpt}</p>
             </div>
           </article>
