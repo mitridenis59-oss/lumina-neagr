@@ -23,12 +23,12 @@ function Checkout() {
   if (done) {
     return (
       <div className="max-w-xl mx-auto px-6 py-32 text-center animate-fade-up">
-        <div className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6 glow-violet">
+        <div className="w-20 h-20 mx-auto rounded-full bg-primary flex items-center justify-center mb-6 glow-gold">
           <CheckCircle2 className="w-10 h-10 text-primary-foreground" />
         </div>
         <h1 className="font-display text-4xl font-bold mb-4">Mulțumim!</h1>
         <p className="text-muted-foreground mb-8">Comanda ta a fost înregistrată. Vei primi un email cu detaliile în câteva minute.</p>
-        <Link to="/"><Button size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground">Înapoi acasă</Button></Link>
+        <Link to="/"><Button size="lg" className="bg-primary text-primary-foreground">Înapoi acasă</Button></Link>
       </div>
     );
   }
@@ -71,7 +71,7 @@ function Checkout() {
               <Input required placeholder="Cod poștal" className="bg-secondary/40 h-11" />
             </div>
           </section>
-          <Button type="submit" size="lg" className="w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 font-semibold glow-violet">
+          <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:opacity-90 font-semibold glow-gold">
             Plasează comanda • {total} RON
           </Button>
         </form>
@@ -94,7 +94,7 @@ function Checkout() {
         <div className="border-t border-border pt-4 space-y-2 text-sm">
           <div className="flex justify-between text-muted-foreground"><span>Subtotal</span><span>{total} RON</span></div>
           <div className="flex justify-between text-muted-foreground"><span>Livrare</span><span>Gratuit</span></div>
-          <div className="flex justify-between font-bold text-lg pt-2"><span>Total</span><span className="text-gradient">{total} RON</span></div>
+          <div className="flex justify-between font-bold text-lg pt-2"><span>Total</span><span className="text-shimmer">{total} RON</span></div>
         </div>
       </aside>
     </div>

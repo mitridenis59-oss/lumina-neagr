@@ -36,7 +36,7 @@ function Blog() {
             </div>
             <div className="p-6">
               <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2">{p.date}</p>
-              <h2 className="font-display text-xl font-bold mb-3 group-hover:text-gradient transition-all">{p.title}</h2>
+              <h2 className="font-display text-xl font-bold mb-3 group-hover:text-shimmer transition-all">{p.title}</h2>
               <p className="text-sm text-muted-foreground leading-relaxed">{p.excerpt}</p>
             </div>
           </article>

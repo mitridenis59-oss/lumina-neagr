@@ -37,13 +37,13 @@ function Contact() {
 
       <form
         onSubmit={(e) => { e.preventDefault(); setSent(true); }}
-        className="glass rounded-2xl p-8 space-y-4 neon-border"
+        className="glass rounded-2xl p-8 space-y-4 "
       >
         <Input required placeholder="Numele tău" className="bg-secondary/40 h-12" />
         <Input required type="email" placeholder="Email" className="bg-secondary/40 h-12" />
         <Input placeholder="Subiect" className="bg-secondary/40 h-12" />
         <Textarea required placeholder="Mesajul tău..." rows={5} className="bg-secondary/40" />
-        <Button type="submit" size="lg" className="w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 font-semibold">
+        <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground hover:opacity-90 font-semibold">
           {sent ? "Mesaj trimis ✓" : "Trimite mesajul"}
         </Button>
       </form>

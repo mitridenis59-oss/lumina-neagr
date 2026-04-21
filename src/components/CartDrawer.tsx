@@ -39,10 +39,10 @@ export function CartDrawer() {
         <div className="p-6 border-t border-border space-y-4">
           <div className="flex justify-between font-semibold">
             <span>Total</span>
-            <span className="text-gradient text-xl">{total} RON</span>
+            <span className="text-shimmer text-xl">{total} RON</span>
           </div>
           <Link to="/checkout" onClick={() => setOpen(false)}>
-            <Button disabled={items.length === 0} className="w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:opacity-90 font-semibold" size="lg">
+            <Button disabled={items.length === 0} className="w-full bg-primary text-primary-foreground hover:opacity-90 font-semibold" size="lg">
               Finalizează comanda
             </Button>
           </Link>
