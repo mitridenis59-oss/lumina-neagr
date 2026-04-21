@@ -9,38 +9,168 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as DespreRouteImport } from './routes/despre'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CheckoutRouteImport } from './routes/checkout'
+import { Route as CategoriiRouteImport } from './routes/categorii'
+import { Route as BlogRouteImport } from './routes/blog'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProdusSlugRouteImport } from './routes/produs.$slug'
+import { Route as CategorieCatRouteImport } from './routes/categorie.$cat'
 
+const DespreRoute = DespreRouteImport.update({
+  id: '/despre',
+  path: '/despre',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CheckoutRoute = CheckoutRouteImport.update({
+  id: '/checkout',
+  path: '/checkout',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CategoriiRoute = CategoriiRouteImport.update({
+  id: '/categorii',
+  path: '/categorii',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogRoute = BlogRouteImport.update({
+  id: '/blog',
+  path: '/blog',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProdusSlugRoute = ProdusSlugRouteImport.update({
+  id: '/produs/$slug',
+  path: '/produs/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CategorieCatRoute = CategorieCatRouteImport.update({
+  id: '/categorie/$cat',
+  path: '/categorie/$cat',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/blog': typeof BlogRoute
+  '/categorii': typeof CategoriiRoute
+  '/checkout': typeof CheckoutRoute
+  '/contact': typeof ContactRoute
+  '/despre': typeof DespreRoute
+  '/categorie/$cat': typeof CategorieCatRoute
+  '/produs/$slug': typeof ProdusSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/blog': typeof BlogRoute
+  '/categorii': typeof CategoriiRoute
+  '/checkout': typeof CheckoutRoute
+  '/contact': typeof ContactRoute
+  '/despre': typeof DespreRoute
+  '/categorie/$cat': typeof CategorieCatRoute
+  '/produs/$slug': typeof ProdusSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/blog': typeof BlogRoute
+  '/categorii': typeof CategoriiRoute
+  '/checkout': typeof CheckoutRoute
+  '/contact': typeof ContactRoute
+  '/despre': typeof DespreRoute
+  '/categorie/$cat': typeof CategorieCatRoute
+  '/produs/$slug': typeof ProdusSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/blog'
+    | '/categorii'
+    | '/checkout'
+    | '/contact'
+    | '/despre'
+    | '/categorie/$cat'
+    | '/produs/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/blog'
+    | '/categorii'
+    | '/checkout'
+    | '/contact'
+    | '/despre'
+    | '/categorie/$cat'
+    | '/produs/$slug'
+  id:
+    | '__root__'
+    | '/'
+    | '/blog'
+    | '/categorii'
+    | '/checkout'
+    | '/contact'
+    | '/despre'
+    | '/categorie/$cat'
+    | '/produs/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BlogRoute: typeof BlogRoute
+  CategoriiRoute: typeof CategoriiRoute
+  CheckoutRoute: typeof CheckoutRoute
+  ContactRoute: typeof ContactRoute
+  DespreRoute: typeof DespreRoute
+  CategorieCatRoute: typeof CategorieCatRoute
+  ProdusSlugRoute: typeof ProdusSlugRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/despre': {
+      id: '/despre'
+      path: '/despre'
+      fullPath: '/despre'
+      preLoaderRoute: typeof DespreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/checkout': {
+      id: '/checkout'
+      path: '/checkout'
+      fullPath: '/checkout'
+      preLoaderRoute: typeof CheckoutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/categorii': {
+      id: '/categorii'
+      path: '/categorii'
+      fullPath: '/categorii'
+      preLoaderRoute: typeof CategoriiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog': {
+      id: '/blog'
+      path: '/blog'
+      fullPath: '/blog'
+      preLoaderRoute: typeof BlogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,11 +178,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/produs/$slug': {
+      id: '/produs/$slug'
+      path: '/produs/$slug'
+      fullPath: '/produs/$slug'
+      preLoaderRoute: typeof ProdusSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/categorie/$cat': {
+      id: '/categorie/$cat'
+      path: '/categorie/$cat'
+      fullPath: '/categorie/$cat'
+      preLoaderRoute: typeof CategorieCatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BlogRoute: BlogRoute,
+  CategoriiRoute: CategoriiRoute,
+  CheckoutRoute: CheckoutRoute,
+  ContactRoute: ContactRoute,
+  DespreRoute: DespreRoute,
+  CategorieCatRoute: CategorieCatRoute,
+  ProdusSlugRoute: ProdusSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
