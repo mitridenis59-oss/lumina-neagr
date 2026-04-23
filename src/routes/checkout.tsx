@@ -8,8 +8,8 @@ import { CheckCircle2 } from "lucide-react";
 export const Route = createFileRoute("/checkout")({
   head: () => ({
     meta: [
-      { title: "Finalizare comandă — NOXE" },
-      { name: "description", content: "Completează datele de livrare pentru a finaliza comanda ta NOXE." },
+      { title: "Finalizare comandă — Casa Tutunului" },
+      { name: "description", content: "Completează datele de livrare pentru comanda ta." },
     ],
   }),
   component: Checkout,

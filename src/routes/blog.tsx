@@ -12,9 +12,9 @@ const posts = [
 export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
-      { title: "Blog — NOXE" },
-      { name: "description", content: "Articole, ghiduri și povești despre lumea trabucurilor, țigărilor premium și a tutunului fin." },
-      { property: "og:title", content: "Blog — NOXE" },
+      { title: "Jurnal — Casa Tutunului" },
+      { name: "description", content: "Articole, ghiduri și povești despre lumea tutunului premium." },
+      { property: "og:title", content: "Jurnal — Casa Tutunului" },
       { property: "og:description", content: "Articole și ghiduri despre tutun premium." },
     ],
   }),
