@@ -28,8 +28,8 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "NOXE — Tutun Premium & Trabucuri de Lux" },
-      { name: "description", content: "Magazin online premium de țigări, trabucuri, tutun vrac și accesorii. Selecție rară, livrare discretă." },
+      { title: "Casa Tutunului — Magazin de specialitate" },
+      { name: "description", content: "Tutun premium de pipă, vrac, pentru rulat și foi întregi. Selecție rară din cele mai bune regiuni. Livrare discretă." },
       { property: "og:type", content: "website" },
     ],
     links: [
@@ -61,7 +61,7 @@ function RootComponent() {
     <CartProvider>
       <AgeGate />
       <Navbar />
-      <main className="pt-20 min-h-screen">
+      <main className="pt-32 sm:pt-36 min-h-screen">
         <Outlet />
       </main>
       <Footer />
