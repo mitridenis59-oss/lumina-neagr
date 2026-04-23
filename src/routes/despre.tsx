@@ -3,10 +3,10 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/despre")({
   head: () => ({
     meta: [
-      { title: "Despre NOXE — Povestea noastră" },
-      { name: "description", content: "NOXE este o casă de selecție pentru pasionații de tutun premium. Cunoaște-ne povestea." },
-      { property: "og:title", content: "Despre NOXE" },
-      { property: "og:description", content: "O casă de selecție pentru pasionații de tutun premium." },
+      { title: "Despre — Casa Tutunului" },
+      { name: "description", content: "Casa Tutunului este un magazin de specialitate dedicat tutunului premium. Cunoaște-ne povestea." },
+      { property: "og:title", content: "Despre — Casa Tutunului" },
+      { property: "og:description", content: "Magazin de specialitate pentru pasionații de tutun premium." },
     ],
   }),
   component: About,
@@ -16,12 +16,12 @@ function About() {
   return (
     <article className="max-w-3xl mx-auto px-6 py-20 animate-fade-up">
       <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4">Despre noi</p>
-      <h1 className="font-display text-5xl md:text-6xl font-bold mb-8">Mai mult decât un magazin. <span className="text-shimmer">Un ritual.</span></h1>
-      <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-        <p>NOXE s-a născut în 2024, dintr-o obsesie simplă: aceea de a redefini felul în care un cunoscător își alege trabucul, țigările sau accesoriile.</p>
-        <p>Călătorim de două ori pe an în Habana, Santo Domingo și Lexington pentru a selecta direct de la producători piesele care merită să poarte semnătura noastră. Fiecare cutie care ajunge la tine a trecut prin mâinile a cel puțin trei specialiști.</p>
-        <p>Credem că lux înseamnă timp. Timpul foilor de tutun să se maturizeze. Timpul tău, când deschizi o cutie sigilată. Timpul unei seri în care lumea se oprește pentru câteva minute.</p>
-        <p>Bun venit în NOXE.</p>
+      <h1 className="font-display text-4xl sm:text-5xl md:text-6xl mb-8">Mai mult decât un magazin. <span className="text-shimmer">Un ritual.</span></h1>
+      <div className="space-y-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
+        <p>Casa Tutunului s-a născut dintr-o pasiune simplă: aceea de a aduce în România cele mai bune soiuri de tutun din lume — Virginia, Burley, Latakia, Perique, Kentucky.</p>
+        <p>Lucrăm direct cu plantațiile din SUA, Turcia, Siria și Italia. Fiecare lot care ajunge la noi este verificat manual și depozitat în condiții optime de umiditate.</p>
+        <p>Credem că tutunul bun cere timp. Timpul frunzelor să se matureze. Timpul tău, când deschizi pachetul. Timpul unui ritual care se face cu atenție.</p>
+        <p>Bun venit la Casa Tutunului.</p>
       </div>
 
       <div className="grid grid-cols-3 gap-6 mt-16 pt-12 border-t border-border">

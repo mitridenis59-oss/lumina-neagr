@@ -75,32 +75,32 @@
 
 :root {
   --radius: 0.5rem;
-  /* Warm luxury palette — deep espresso, gold, burgundy, cream */
-  --background: oklch(0.16 0.012 50);              /* deep warm espresso */
-  --foreground: oklch(0.94 0.015 80);              /* warm cream */
-  --card: oklch(0.20 0.018 50);                    /* slightly lifted card */
-  --card-foreground: oklch(0.94 0.015 80);
-  --popover: oklch(0.18 0.015 50);
-  --popover-foreground: oklch(0.94 0.015 80);
-  --primary: oklch(0.78 0.13 75);                  /* champagne gold */
+  /* Warm luxury — espresso, champagne gold, burgundy, cream — easier on the eyes */
+  --background: oklch(0.18 0.018 55);              /* warm dark espresso, less harsh */
+  --foreground: oklch(0.95 0.018 85);              /* soft cream */
+  --card: oklch(0.23 0.022 55);                    /* lifted warm card */
+  --card-foreground: oklch(0.95 0.018 85);
+  --popover: oklch(0.21 0.020 55);
+  --popover-foreground: oklch(0.95 0.018 85);
+  --primary: oklch(0.80 0.12 78);                  /* champagne gold — warm */
   --primary-foreground: oklch(0.16 0.012 50);
-  --secondary: oklch(0.26 0.025 45);               /* warm taupe */
-  --secondary-foreground: oklch(0.94 0.015 80);
-  --muted: oklch(0.22 0.018 50);
-  --muted-foreground: oklch(0.68 0.025 75);        /* warm muted beige */
-  --accent: oklch(0.42 0.13 25);                   /* deep burgundy */
-  --accent-foreground: oklch(0.94 0.015 80);
+  --secondary: oklch(0.30 0.028 50);               /* warm taupe */
+  --secondary-foreground: oklch(0.95 0.018 85);
+  --muted: oklch(0.26 0.020 55);
+  --muted-foreground: oklch(0.72 0.025 78);        /* warm beige */
+  --accent: oklch(0.45 0.13 28);                   /* deep burgundy */
+  --accent-foreground: oklch(0.95 0.018 85);
   --destructive: oklch(0.55 0.20 25);
   --destructive-foreground: oklch(0.97 0 0);
-  --border: oklch(0.28 0.022 50);
-  --input: oklch(0.24 0.020 50);
-  --ring: oklch(0.78 0.13 75);
+  --border: oklch(0.32 0.025 55);
+  --input: oklch(0.27 0.022 55);
+  --ring: oklch(0.80 0.12 78);
 
-  --gold: oklch(0.78 0.13 75);
-  --gold-soft: oklch(0.85 0.09 80);
-  --burgundy: oklch(0.42 0.13 25);
-  --cream: oklch(0.94 0.015 80);
-  --espresso: oklch(0.16 0.012 50);
+  --gold: oklch(0.80 0.12 78);
+  --gold-soft: oklch(0.87 0.08 82);
+  --burgundy: oklch(0.45 0.13 28);
+  --cream: oklch(0.95 0.018 85);
+  --espresso: oklch(0.18 0.018 55);
 
   --gradient-hero: linear-gradient(135deg, oklch(0.42 0.13 25 / 0.4), oklch(0.16 0.012 50 / 0.85));
   --gradient-gold: linear-gradient(135deg, oklch(0.85 0.09 80), oklch(0.72 0.14 65));
